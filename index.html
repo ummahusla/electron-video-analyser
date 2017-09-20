@@ -8,5 +8,15 @@
 			<label>Select a video</label>
 			<input type="file" accept="video/*" />
 		</div>
+		<div>
+			<button type="submit">Analyse</button>
+		</div>
 	</form>
+
+	<script>
+		document.querySelector('form').addEventListener('submit', (event) => {
+			event.preventDefault();
+			const file = document.querySelector('input').files[0];
+		});
+	</script>
 </body>
